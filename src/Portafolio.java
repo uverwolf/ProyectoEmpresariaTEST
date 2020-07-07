@@ -1,16 +1,16 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-public class Portafolio<T>  implements Iterable<T> {
- ArrayList<T> portafolio = new ArrayList<T>();
- public void agregar(T array) {
+public class Portafolio<Proyect>  implements Iterable<Proyect> {
+ ArrayList<Proyect> portafolio = new ArrayList<Proyect>();
+ public void agregar(Proyect array) {
 	 portafolio.add(array);
 	 
  }
-	 public  Iterator<T> iterator(){
+	 public  Iterator<Proyect> iterator(){
 		 return portafolio.iterator();
 	 }
 	 	public void show() {
-			for(Object o : portafolio) {
+			for(Proyect o : portafolio) {
 				if (o instanceof Proyectos) {
 					Proyectos  proyecto= (Proyectos) o;
 					String x =proyecto.elevatorPitch();
